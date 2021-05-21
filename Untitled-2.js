@@ -16,3 +16,15 @@ switch (true) {
         console.log("Fehlerhafte Eingabe");
         break;
 }
+switch (true) {
+    case (((year - birthYear)>18) && ( (year - birthYear)<150)):
+        console.log(firstName + " ist alt genug somit Zutritt erteilt");
+        break;
+    case ((year - birthYear)<17):
+        console.log("Leider zu Jung Zutritt Verweigert");
+        break;
+ 
+    default:
+        console.log("Fehlerhafte Eingabe");
+        break;
+}
