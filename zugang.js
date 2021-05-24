@@ -20,7 +20,7 @@ switch (true) {
 zugang();
 function zugang()
 {
-  ausgabe(alterBerechnung(datum(geburtsJahr(Name()))));  
+  ausgabe(alterBerechnung());  
 }
 
 function alterBerechnung() 
