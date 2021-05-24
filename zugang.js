@@ -20,19 +20,19 @@ switch (true) {
 zugang();
 function zugang()
 {
-  ausgabe(alterBerechnung(datum(geburtsJahr(Name))));  
+  ausgabe(alterBerechnung(datum(geburtsJahr(Name()))));  
 }
 
 function alterBerechnung() 
 {
-    if (datum - geburtsJahr == 18)
+    if (datum() - geburtsJahr() >= 18)
     {
-        return (firstName + " ist alt genug somit Zutritt erteilt");
-    } 
+        return (Name() + " ist alt genug somit Zutritt erteilt");
+    }
     else 
     {
         return ("Leider zu Jung Zutritt Verweigert");
-    }
+}
 }
     /*
     switch (true) 
@@ -74,4 +74,3 @@ function ausgabe(outPut)
 {
     console.log(outPut);    
 }
-
